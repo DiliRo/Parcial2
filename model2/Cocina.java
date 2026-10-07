@@ -31,6 +31,8 @@ public class Cocina {
     }
 
     public void setOrdenFinalizada(int numeroOrden){
+        Orden orden = this.ordenRecibida[numeroOrden];
+        this.ordenFinalizada[numeroOrden] = orden;
         this.ordenRecibida[numeroOrden] = null;
     }
 
